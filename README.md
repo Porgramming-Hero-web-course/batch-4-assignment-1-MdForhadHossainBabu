@@ -4,12 +4,11 @@
 
 
 
-Blogs: 
-
+ # Blogs: 
 
 # The Significance of Union and Intersection Types in TypeScript
      
-    # TypeScript's union and intersection types are powerful features that allow for greater flexibility and precision when working with types. They enable developers to define more complex data structures while maintaining type safety.
+   # TypeScript's union and intersection types are powerful features that allow for greater flexibility and precision when working with types. They enable developers to define more complex data structures while maintaining type safety.
 
    # Union Types: 
 
@@ -17,7 +16,7 @@ Blogs:
 
 
 
-    # let value: string | number;
+    let value: string | number;
     value = "Hello";  // valid
     value = 10;       // valid
     value = true;     // error: 'boolean' is not assignable to 'string | number'
@@ -33,7 +32,7 @@ Blogs:
 # Intersection Types
    # Intersection types allow you to combine multiple types into one. The resulting type will include all the properties from the combined types.
 
-    #interface Person {
+    interface Person {
      name: string;
      age: number;
     }
