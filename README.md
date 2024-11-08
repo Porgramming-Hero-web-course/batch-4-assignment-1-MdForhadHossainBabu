@@ -17,38 +17,38 @@ Blogs:
 
 
 
-   let value: string | number;
-value = "Hello";  // valid
-value = 10;       // valid
-value = true;     // error: 'boolean' is not assignable to 'string | number'
+    # let value: string | number;
+    value = "Hello";  // valid
+    value = 10;       // valid
+    value = true;     // error: 'boolean' is not assignable to 'string | number'
 
 # Here, value can be either a string or a number, but cannot be other types such as boolean. Union types are useful when you need to work with multiple possible types.
 
 
 # Use cases of Union types:
-    - Function parameters: Accepting different types of input
-    - Variables: A variable that can hold multiple types
+   - Function parameters: Accepting different types of input
+   - Variables: A variable that can hold multiple types
 
 
 # Intersection Types
-    # Intersection types allow you to combine multiple types into one. The resulting type will include all the properties from the combined types.
+   # Intersection types allow you to combine multiple types into one. The resulting type will include all the properties from the combined types.
 
-interface Person {
-  name: string;
-  age: number;
-}
+    #interface Person {
+     name: string;
+     age: number;
+    }
 
-interface Employee {
-  employeeId: string;
-}
+    interface Employee {
+    employeeId: string;
+    }
 
-type EmployeePerson = Person & Employee;
+     type EmployeePerson = Person & Employee;
 
-const employee: EmployeePerson = {
-  name: "John",
-  age: 30,
-  employeeId: "E123"
-};
+     const employee: EmployeePerson = {
+    name: "John",
+    age: 30,
+    employeeId: "E123"
+    };
 
 
 # Here, EmployeePerson is an intersection type of Person and Employee, meaning it will have all the properties of both types.
@@ -58,8 +58,8 @@ const employee: EmployeePerson = {
 
 # Use cases of Intersection types:
 
-    - Combining multiple interfaces: When you want an object to have all the properties from multiple interfaces or types
-    - Combining types into a single object type
+   - Combining multiple interfaces: When you want an object to have all the properties from multiple interfaces or types
+   - Combining types into a single object type
 
 
 # Summary
